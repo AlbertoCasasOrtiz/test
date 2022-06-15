@@ -36,4 +36,6 @@ jobs:
           conda --version
           echo Python version
           python --version
+          echo Local folders
+          ls /usr/local/
           
