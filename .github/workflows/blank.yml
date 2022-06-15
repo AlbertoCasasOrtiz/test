@@ -32,3 +32,8 @@ jobs:
           lsb_release -a
           echo Check GLIBCXX version
           strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+          echo Conda version
+          conda --version
+          echo Python version
+          python --version
+          
