@@ -37,5 +37,5 @@ jobs:
           echo Python version
           python --version
           echo Local folders
-          ls /usr/share/miniconda
+          ls /usr/share/miniconda/lib/
           
