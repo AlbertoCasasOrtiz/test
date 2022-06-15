@@ -28,14 +28,14 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Check Ubuntu version
-          lsb_release -a
-          echo Check GLIBCXX version
-          strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+          # echo Check Ubuntu version
+          # lsb_release -a
+          #echo Check GLIBCXX version
+          #strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
           echo Conda version
           conda --version
           echo Python version
           python --version
-          echo Local folders
-          ls /usr/share/miniconda/lib/
+          echo GLIBCXX version in conda
+          strings /usr/share/miniconda/lib/libstdc++.so.6 | grep GLIBCXX
           
